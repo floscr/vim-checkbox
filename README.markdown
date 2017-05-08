@@ -10,6 +10,8 @@ Description
 Simple plugin that toggles text checkboxes in Vim. Works great if you're using
 a markdown file for notes and todo lists.
 
+This fork uses the uppercase 'X' instead of 'x' which works better with [vimwiki]()
+
 
 Installation
 ------------
@@ -30,3 +32,5 @@ becomes
 	* [x] Do some work.
 
 and vice versa.
+
+[vimwiki]: https://github.com/vimwiki/vimwiki

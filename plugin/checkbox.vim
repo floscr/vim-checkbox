@@ -8,7 +8,7 @@
 " ****************************************************************************
 " Installation: Copy this script into your plugin folder.
 " Usage: Press "<leader>tt" to toggle the (first) checkbox on the current
-" line, if any. That means, "[ ]" will be replaced with "[x]" and "[x]" with
+" line, if any. That means, "[ ]" will be replaced with "[X]" and "[X]" with
 " "[ ]".
 " ****************************************************************************
 
@@ -20,7 +20,7 @@ fu! checkbox#ToggleCB()
 	let line = getline('.')
 
 	if(match(line, "\\[ \\]") != -1)
-		let line = substitute(line, "\\[ \\]", "[x]", "")
+		let line = substitute(line, "\\[ \\]", "[X]", "")
 	elseif(match(line, "\\[x\\]") != -1)
 		let line = substitute(line, "\\[x\\]", "[ ]", "")
 	endif
